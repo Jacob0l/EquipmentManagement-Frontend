@@ -1,0 +1,64 @@
+
+.navbar-container {
+    display: flex;
+    padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+    gap: 9rem;
+    margin: 0;
+
+    background-color: var(--color-primary);
+}
+
+/* .navbar-container a {
+    padding: 0rem;
+} */
+
+.navbar-icon-container {
+    display: flex;
+    padding-left: 1rem;
+    font-size: 3rem;
+    align-items: center;
+
+
+    /* background-color: var(--color-active); */
+}
+
+.navbar-icon-container svg {
+    /* background-color: var(--color-secondary); */
+    color: var(--color-secondary);
+}
+
+.navlink-container {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem; 
+    align-items: flex-end;
+}
+
+.navlink-container a {
+    padding: 0.75rem;
+}
+
+.navlink {
+    display: inline-flex;
+    width: 8rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+
+    transition: background-color 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+.navlink:hover {
+    background-color: var(--color-hover);
+    transform: scale(1.1);
+}
+
+.active {
+    font-weight: bold;
+}
+
