@@ -1,16 +1,34 @@
- import React from "react";
- import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
- import { faHouse } from "@fortawesome/free-regular-svg-icons";
+import React from "react";
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
- import {BrowserRouter} from 'react-router-dom'
+import RootLayout from "./layouts/RootLayout/RootLayout";
+import EquipmentLayout from "./layouts/EquipmentLayout/EquipmentLayout";
+import DashboardLayout from "./layouts/DashboardLayout/DashboardLayout";
+import MaintenanceLayout from "./layouts/MaintenanceLayout/MaintenanceLayout";
 
- import Navbar from "./components/Navbar/Navbar";
+import DashboardHome from "./pages/DashboardHome";
+import EquipmentOverview from "./pages/EquipmentOverview";
+import MaintenanceHome from "./pages/MaintenanceHome";
 
- function App(){
-    return (
-      <BrowserRouter>
-         <Navbar/>
-      </BrowserRouter>
-    );
-   }
- export default App;
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<RootLayout/>}>
+          <Route path='/' element={<Navigate to="/dashboard" replace />} />
+          <Route path='/dashboard' element={<DashboardLayout/>}>
+            <Route index element={<DashboardHome/>}/>
+          </Route>
+          <Route path='/equipment' element={<EquipmentLayout/>}>
+            <Route index element={<EquipmentOverview/>}/>
+          </Route>
+          <Route path='/maintenance' element={<MaintenanceLayout/>}>
+            <Route index element={<MaintenanceHome/>}/>
+          </Route>
+
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+export default App;

@@ -29,11 +29,14 @@
   --space-sm: 0.5rem;
   --space-md: 1rem;
   --space-lg: 2rem;
+  --space-xlg: 3rem;
 
   /* ===== Radius ===== */
   --radius-sm: 4px;
   --radius-md: 8px;
 
   /* ===== Shadow ===== */
-  --shadow-sm: 10px 10px 0 rgba(0, 0, 0, 0.1);
+  --shadow-sm: 10px 10px 0 rgba(57, 47, 47, 0.1);
+
+  --shadow-sm-active: 10px 10px 0 rgba(0, 0, 0, 0.1);
 }
