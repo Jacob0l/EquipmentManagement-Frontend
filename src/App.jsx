@@ -7,7 +7,7 @@ import DashboardLayout from "./layouts/DashboardLayout/DashboardLayout";
 import MaintenanceLayout from "./layouts/MaintenanceLayout/MaintenanceLayout";
 
 import DashboardHome from "./pages/DashboardHome";
-import EquipmentOverview from "./pages/EquipmentOverview";
+import EquipmentOverview from "./pages/Equipment/EquipmentOverview";
 import MaintenanceHome from "./pages/MaintenanceHome";
 
 function App() {
