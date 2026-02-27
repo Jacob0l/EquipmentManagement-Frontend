@@ -4,8 +4,8 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 
 import './EquipmentLayout.css';
 
-function EquipmentLayout(){
-    return(
+function EquipmentLayout() {
+    return (
         <>
             <Sidebar>
                 <ul className="equipment-sidebar-links-container">
@@ -13,7 +13,6 @@ function EquipmentLayout(){
                     <li><NavLink to="/equipment/id" className={({ isActive }) => isActive ? "equipment-sidebar-link equipment-active" : "equipment-sidebar-link"}>Equipment Link 2</NavLink></li>
                 </ul>
             </Sidebar>
-
             <Outlet />
         </>
     );

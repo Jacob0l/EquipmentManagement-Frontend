@@ -5,6 +5,14 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 3201
+    port: 3201,
+    open: true,
+    proxy: {
+      '/api': {
+        target: 'https://localhost:7193',
+        changeOrigin: true,
+        secure: false
+      }
+    }
   }
 })

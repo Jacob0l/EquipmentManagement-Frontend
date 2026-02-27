@@ -1,0 +1,34 @@
+.equipment-main-content {
+    flex: 1;
+
+    /* display: flex;
+    flex-direction: column; */
+    /* padding: 1rem; */
+
+    /* border: 2px solid black; */
+
+
+}
+
+.search-table-contaier {
+    /* border: 2px solid black; */
+}
+
+.dropdown-search-container {
+    display: flex;
+    padding-bottom: 1rem;
+    gap: 1rem;
+
+    /* border: 2px solid black; */
+}
+
+/* .reset-filters-button {
+
+} */
+
+.pagination-container {
+    display: flex;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    justify-content: center;
+}
