@@ -10,7 +10,7 @@ export const Pagination = ({ currentPage, pages, onPageSelect }) => {
                     ? <span key={index}>...</span>
                     : <button
                         type="button"
-                        key={page}
+                        key={`page-${page}`}
                         onClick={(e) => { onPageSelect(page) }}
                         className={`${page === currentPage ? 'btn active-btn' : 'btn'}`}
                         disabled={page === currentPage}>
