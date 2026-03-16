@@ -1,6 +1,6 @@
-# Equipment Management Dashboard
+# Equipment Management Frontend
 
-React dashboard for visualizing equipment calibration activity and costs.
+React application for visualizing equipment calibration activity and costs in a dashbaord and equipment management.
 
 The dashboard allows users to explore calibration data across a selected time range and view analytics such as cost breakdowns, vendor activity, and calibration counts.
 
